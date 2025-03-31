@@ -1,5 +1,6 @@
 import Cart from './cart.jsx';
 import Data from '../assets/data.json';
+import { Link } from "react-router-dom";
 
 
 function gallery (logement) {
@@ -8,7 +9,9 @@ function gallery (logement) {
             {Data.map((logement) => {
                 return (
                     <article key={logement.id}>
-                <Cart image={logement.cover} title= {logement.title} />
+                <Link to={'/logement/:id'}>
+                    <Cart image={logement.cover} title= {logement.title} />
+                </Link>
                     </article>
                     
                 )

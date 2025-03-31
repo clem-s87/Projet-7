@@ -1,6 +1,12 @@
+import Header from '../components/header.jsx';
+import Footer from '../components/footer.jsx';
+
 function about () {
     return (
-        <p>blablabla</p>
+        <div>
+        <Header />
+        <Footer />
+        </div>
     )
 }
 

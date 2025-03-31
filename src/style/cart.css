@@ -12,6 +12,10 @@
     background-color: #f6f6f6;
     gap: 40px;
     border-radius: 25px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .carts {
@@ -25,4 +29,5 @@
     font-size: 18px;
     bottom: 0px;
     padding: 10px;
+    color: #FFFFFF;
 }
