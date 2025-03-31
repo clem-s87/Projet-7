@@ -1,6 +1,6 @@
-import data from '../assets/data.json';
+import '../style/cart.css';
 
-function cart (image, title) {
+function cart ({image, title}) {
 
     return (
         <div className='carts'>

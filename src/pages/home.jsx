@@ -1,13 +1,13 @@
 import Header from '../components/header.jsx';
 import Banner from '../components/banner.jsx';
-import Cart from '../components/cart.jsx';
+import Gallery from '../components/gallery.jsx';
 
 function home () {
     return (
         <div className='home'>
         <Header />
         <Banner />
-        <Cart />
+        <Gallery />
         </div>
     )
 }
