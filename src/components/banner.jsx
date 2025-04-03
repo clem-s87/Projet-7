@@ -1,14 +1,16 @@
-import Banner from '../assets/images/IMG.png';
+import React from 'react';
 import '../style/banner.css';
 
-function Banniere () {
-    return (
-        <div className='banniere'>
-            <div className='banniere_text'>
-                <p>Chez vous, partout et ailleurs</p>
-            </div>
-        </div>
-    )
-};
 
-export default Banniere; 
+const Banner = ({ imageUrl, children }) => {
+    return (
+      <div className="banniere" style={{ backgroundImage: `url(${imageUrl})`}}>
+        <div className="banniere_text"> 
+        {children}
+        </div>
+      </div>
+    );
+  };
+  
+  
+  export default Banner;

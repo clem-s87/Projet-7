@@ -9,7 +9,7 @@ function gallery (logement) {
             {Data.map((logement) => {
                 return (
                     <article key={logement.id}>
-                <Link to={'/logement/:id'}>
+                <Link to={`/logement/${logement.id}`}>
                     <Cart image={logement.cover} title= {logement.title} />
                 </Link>
                     </article>

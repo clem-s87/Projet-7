@@ -1,7 +1,6 @@
 .banniere {
     position: relative;
     height: 223px;
-    background-image: url(../assets/images/IMG.png);
     background-size: cover;
     background-position: center;
     border-radius: 25px;
@@ -14,6 +13,7 @@
     
 }
 
+/* Pseudo-élément ::before pour l'image de fond avec le filtre de luminosité */
 .banniere::before {
     content: '';
     position: absolute;
@@ -21,18 +21,19 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(../assets/images/IMG.png);
     background-size: cover;
     background-position: center;
-    filter: brightness(35%); 
-    z-index: 1; 
+    z-index: 1;  /* Position sous le texte */
     border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* Style pour le texte */
 .banniere_text {
     position: relative;
-    z-index: 2;
+    z-index: 2; /* Le texte est au-dessus de l'overlay */
     color: white;
     font-size: 48px;
     font-weight: bold;
+    text-align: center;  /* Centrer le texte */
 }
