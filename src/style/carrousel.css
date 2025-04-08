@@ -1,0 +1,12 @@
+.carrousel {
+    position: relative;
+}
+
+.carrousel_images img {
+    height: 415px;
+    width: 100%;
+}
+
+.carrousel_buttonG {
+    position: relative;
+}

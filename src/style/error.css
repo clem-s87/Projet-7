@@ -13,6 +13,9 @@
 
 .error_main_container {
     padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header-link {

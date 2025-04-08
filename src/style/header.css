@@ -1,14 +1,16 @@
 header {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 50px;
-    padding: 4rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 
 nav {
     display: flex;
     gap: 60px;
-
+    align-items: center;
 }
 
 .header_logo {

@@ -13,7 +13,6 @@ function logement () {
         <div>
         <Header />
         <Carrousel pictures={logement.pictures} title={logement.title} />
-        <section></section>
         <Footer />
         </div>
     )
