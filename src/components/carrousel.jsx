@@ -20,12 +20,21 @@ function carrousel ({ pictures}) {
             <div className="carrousel_images">
                 <img src={pictures[currentIndex]} alt={`Image ${currentIndex + 1}`} />
             </div>
+            {pictures.length > 1 && (
+                <>
+            <div className="carrousel-pagination">
+                <p>
+                    {currentIndex + 1} / {pictures.length}
+                </p>
+            </div>
             <div className="carrousel_buttons">
                 <img src={ArrowG} className="carrousel_buttonG" onClick={goToPrevious}> 
                 </img>
                 <img src={ArrowD} className="carrousel_buttonD" onClick={goToNext}>
                 </img>
             </div>
+            </>
+            )}
         </div>
     );
 };

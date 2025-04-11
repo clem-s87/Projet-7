@@ -2,11 +2,41 @@
     position: relative;
 }
 
+.carrousel_images {
+    margin-right: 4rem;
+    margin-left: 4rem;
+    
+}
+
 .carrousel_images img {
     height: 415px;
     width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
 }
 
 .carrousel_buttonG {
-    position: relative;
+    position: absolute;
+    width: 46px;
+    height: 79px;
+    top: 170px;
+    left: 80px;
+}
+
+.carrousel_buttonD {
+    position: absolute;
+    top: 170px;
+    right: 80px;
+    width: 46px;
+    height: 79px;
+}
+
+.carrousel-pagination {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+
+    p {
+        font-weight: bold;
+    }
 }
