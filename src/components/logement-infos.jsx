@@ -1,9 +1,10 @@
 import '../style/logement-infos.css';
 import Collapse from '../components/collapse';
+import Rating from '../components/rating';
 
 
 
-function info ({title, localisation, tags, host, image, description, equipements}) {
+function info ({title, localisation, tags, host, image, description, equipements, rating}) {
     return (
         <section className='container_info'>
             <div className='container_info_text'>
@@ -12,7 +13,7 @@ function info ({title, localisation, tags, host, image, description, equipements
                     <p className='container_info_blockG_localisation'>{localisation}</p>
                     <div className='container_info_blockG_tags'>
                             {tags.map((tags, id) => (
-                                <div className='container_info_blockG_tags_text' key={id}>{tags}</div>
+                                <div className='container_info_blockG_tags_text' key={id}><p>{tags}</p></div>
                             ))}
                     </div>
                 </div>
@@ -21,7 +22,8 @@ function info ({title, localisation, tags, host, image, description, equipements
                         <p className='container_info_blockD_host'>{host}</p>
                         <img src={image} className='photo_host'></img>
                     </div>
-                    <div className='container_info_blockD_rating'></div>
+                    
+                    <div className='container_info_blockD_rating'><Rating note={rating}/></div>
                 </div>
             </div>
                 <div className='collapse_info'>

@@ -2,6 +2,7 @@
     color: #FF6060;
     font-size: 36px;
     margin: 0;
+    font-weight: 500;
 }
 
 .container_info {
@@ -14,12 +15,15 @@
 
 .container_info_blockG_localisation {
     color: black;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 10px;
 }
 
 .container_info_blockG_tags_text {
     background-color: #FF6060;
     color: white;
-    width: 115px;
     height: 25px;
     border-radius: 10px;
     display: flex;
@@ -27,6 +31,12 @@
     align-items: center;
     font-size: 14px;
     font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    p {
+        margin: 0;
+    }
 }
 
 .container_info_blockG_tags {
@@ -47,6 +57,8 @@
 .container_info_text {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 .collapse_info {
@@ -56,6 +68,7 @@
 
 .collapse_info_text {
     width: 100%;
+    padding-bottom: 40px;
 }
 
 .photo_host {
@@ -66,4 +79,17 @@
 
 .container_info_blockD {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.container_info_blockD_name {
+    display: flex;
+}
+
+.equipements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
