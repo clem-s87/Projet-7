@@ -40,3 +40,39 @@
         font-weight: bold;
     }
 }
+
+/* Small device */
+
+@media screen and (max-width: 767.98px) {
+ 
+.carrousel_images {
+     margin-right: 1rem;
+     margin-left: 1rem;
+        
+} 
+
+.carrousel_buttonG {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 122px;
+        left: 40px;
+}
+    
+.carrousel_buttonD {
+        position: absolute;
+        top: 122px;
+        right: 40px;
+        width: 24px;
+        height: 24px;
+}
+
+.carrousel_images img {
+    height: 255px;
+}
+
+.carrousel-pagination {
+    display: none;
+}
+
+}

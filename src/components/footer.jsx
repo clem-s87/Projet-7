@@ -6,7 +6,7 @@ function footer () {
     return (
         <footer>
             <Link to={'/'}><img src={logo} alt='Photo logo Kasa' className='footer_logo'></img></Link>
-            <p className='footer_text'>© 2020 Kasa. All rights reserved</p>
+            <p className='footer_text'>© 2020 Kasa. All <span className='footer_text_mobile'>rights reserved</span></p>
         </footer>
     )
 }

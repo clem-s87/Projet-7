@@ -11,7 +11,7 @@ function home () {
         <div className='home'>
         <Header />
         <Banner imageUrl={image1}>
-        <h1 className='banniere_text'>Chez vous, partout et ailleurs</h1>
+        <h1 className='banniere_text'>Chez vous,<span className='banniere_text_mobile'> partout et ailleurs</span></h1>
         </Banner>
         <Gallery />
         <Footer />

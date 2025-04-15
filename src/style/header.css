@@ -28,3 +28,22 @@ nav {
     text-decoration: underline;
     color: black;
 }
+
+/* Small device */
+
+@media screen and (max-width: 767.98px) {
+
+    .header_logo {
+        width: 145px;
+        height: 46px;
+    }  
+    
+header {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+nav {
+    gap: 30px;
+}
+}

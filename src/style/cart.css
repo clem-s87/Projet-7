@@ -31,3 +31,34 @@
     padding: 10px;
     color: #FFFFFF;
 }
+
+/* Medium device */
+
+@media screen and (max-width: 1024px) {
+
+.gallery {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 20px;
+    gap: 30px;
+    }
+
+}
+
+/* Small device */
+
+@media screen and (max-width: 767.98px) {
+
+.gallery {
+    grid-template-columns: 1fr ;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0;
+    gap: 20px;
+    background-color: #FFFFFF;
+}
+
+.carts_img {
+    height: 255px;
+}
+}

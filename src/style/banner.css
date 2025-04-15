@@ -13,7 +13,7 @@
     
 }
 
-/* Pseudo-élément ::before pour l'image de fond avec le filtre de luminosité */
+
 .banniere::before {
     content: '';
     position: absolute;
@@ -23,7 +23,7 @@
     bottom: 0;
     background-size: cover;
     background-position: center;
-    z-index: 1;  /* Position sous le texte */
+    z-index: 1;  
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -31,9 +31,34 @@
 /* Style pour le texte */
 .banniere_text {
     position: relative;
-    z-index: 2; /* Le texte est au-dessus de l'overlay */
+    z-index: 2; 
     color: white;
     font-size: 48px;
     font-weight: bold;
-    text-align: center;  /* Centrer le texte */
+    text-align: center;  
+}
+
+/* Small device */
+
+@media screen and (max-width: 767.98px) {
+
+.banniere {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 111px;
+    padding-left: 1rem;
+    justify-content: flex-start;
+}
+
+.banniere_text {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.banniere_text_mobile {
+    display: block;
+}
+
 }
