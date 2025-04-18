@@ -25,6 +25,7 @@ function collapse ({title, content}) {
                     </span>
                 </div>
             </div>
+            
 {/* If collapse is open content appear */}
             <div className={`collapse_content_open ${IsOpen ? 'open' : ''}`}>
                 <div className='collapse_text'>{content}</div>
